@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NEZOU</title>
+    <link rel="stylesheet" type="text/css" href="css/slider.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/slider.js"></script>
+</head>
+
+<body>
+    <input id="drop_zone" placeholder="csvファイルをドラッグ&ドロップして下さい"></input>
+    <script>
+        // Setup the dnd listeners.
+        var dropZone = document.getElementById('drop_zone');
+        dropZone.addEventListener('dragover', handleDragOver, false);
+        dropZone.addEventListener('drop', handleFileSelect, false);
+        //dropZone.addEventListener('change', handleFileSelect, false);
+    </script>
+    <center>
+        <div class="js-slider slider" id="list"></div>
+    </center>
+    </div>
+
+</body>
+
+</html>
